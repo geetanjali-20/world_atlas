@@ -1,0 +1,17 @@
+[
+  {
+    "icon": "MdPlace",
+    "title": "Find us",
+    "details": "Noida, Uttar Pradesh, India"
+  },
+  {
+    "icon": "IoCallSharp",
+    "title": "Call us",
+    "details": "999XXXXX99"
+  },
+  {
+    "icon": "TbMailPlus",
+    "title": "Mail us",
+    "details": "geetus2001@gmail.com"
+  }
+]
