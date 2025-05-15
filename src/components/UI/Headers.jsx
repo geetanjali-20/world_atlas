@@ -22,19 +22,23 @@ export const Headers = () => {
           <nav className={show ? "menu-mobile" : "menu-web"}>
             <ul>
               <li>
-                <NavLink to="/">Home</NavLink>
+                <NavLink to="/" className={({ isActive }) => isActive ? "active" : "navItem"}>Home</NavLink>
+
               </li>
               <li>
-                <NavLink to="/about">About</NavLink>
+               <NavLink to="/about" className={({ isActive }) => isActive ? "active" : "navItem"}>About</NavLink>
+
               </li>
               <li>
-                <NavLink to="/filters">Insights</NavLink>
+               <NavLink to="/filters" className={({ isActive }) => isActive ? "active" : "navItem"}>Insights</NavLink>
+
               </li>
               <li>
-                <NavLink to="/country">Countries</NavLink>
+               <NavLink to="/country" className={({ isActive }) => isActive ? "active" : "navItem"}>Countries</NavLink>
+
               </li>
               <li>
-                <NavLink to="/contact">Contact</NavLink>
+               <NavLink to="/contact" className={({ isActive }) => isActive ? "active" : "navItem"}>Contact</NavLink>
               </li>
             </ul>
           </nav>

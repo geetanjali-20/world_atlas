@@ -41,6 +41,7 @@ li {
 }
 ol li {
 	list-style: decimal;
+	margin-left: 20px;
 }
 
 a {
@@ -137,15 +138,17 @@ nav ul {
 	color: #fff;
 
 	& li {
+		font-size: unset;
 		a {
 			color: #fff;
+			font-size: unset;
 			&:hover {
-				color: #d9d9dd;
+				/* color: #d9d9dd; */
 				font-weight: bold;
 			}
 		}
 		&:hover {
-			scale: 1.25;
+			scale: 1.05;
 			transition: all 0.3s ease-in-out;
 		}
 	}
@@ -153,6 +156,9 @@ nav ul {
 
 .ham-menu {
 	display: none;
+}
+.ham-menu button {
+	margin-top: 0px;
 }
 
 /* media queries  */
@@ -407,10 +413,18 @@ nav ul {
 }
 .logoName {
 	background: -webkit-linear-gradient(#3d3df1, #24cc24);
-  background-clip: text;
+	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	font-size: 50px;
+	font-size: 40px;
+}
+.active {
+	color: #3da077;
+	font-weight: 600;
+	font-size: 2.2rem;
+	font-family: "urbanist";
+	position: relative;
+	top: -4px;
 }
 
 ul {
@@ -651,6 +665,12 @@ country Card
 	justify-content: center;
 	align-items: center;
 }
+.navItem {
+	font-size: 1.7rem;
+	letter-spacing: 0.1rem;
+	line-height: 1.6;
+	color: #fff;
+}
 
 ::placeholder {
 	font-size: 1.6rem;
@@ -738,6 +758,17 @@ contact us Page ends here
 		margin: 0px 20px;
 		width: auto;
 		height: auto;
+	}
+
+	.worldImage {
+		width: 100%;
+		height: 100%;
+	}
+	.filterParagraph {
+		margin: 0px 20px;
+	}
+	.logoName {
+		font-size: 30px;
 	}
 }
 
