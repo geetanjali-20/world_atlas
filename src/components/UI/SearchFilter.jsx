@@ -21,6 +21,7 @@ export const SearchFilter = ({ search, setSearch, filter, setFilter, countries, 
 		});
 		setCountries(sortCountry);
 	};
+	const uniqueRegions = [...new Set(countries.map(country => country.region))].filter(Boolean);
 
 	return (
 		<section className="section-searchFilter container">
@@ -39,11 +40,13 @@ export const SearchFilter = ({ search, setSearch, filter, setFilter, countries, 
 					<label htmlFor="sort">Region:</label>
 					<select className="select-section" value={filter} onChange={handleSelectChange}>
 						<option value="all">All</option>
-						<option value="Africa">Africa</option>
-						<option value="Americas">Americas</option>
-						<option value="Asia">Asia</option>
-						<option value="Europe">Europe</option>
-						<option value="Oceania">Oceania</option>
+						{uniqueRegions.map((region, index) => (
+							<option key={index} value={region}>
+								{region}
+							</option>
+						))}
+						
+						
 					</select>
 				</div>
 			</div>

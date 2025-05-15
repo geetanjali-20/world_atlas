@@ -15,7 +15,7 @@ export const Headers = () => {
         <div className="grid navbar-grid">
           <div className="Logo">
             <NavLink to="/">
-              <h1>WorldAtlas</h1>
+              <h1 className="logoName">WorldAtlas</h1>
             </NavLink>
           </div>
 
@@ -26,6 +26,9 @@ export const Headers = () => {
               </li>
               <li>
                 <NavLink to="/about">About</NavLink>
+              </li>
+              <li>
+                <NavLink to="/filters">Insights</NavLink>
               </li>
               <li>
                 <NavLink to="/country">Countries</NavLink>

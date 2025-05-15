@@ -4,11 +4,12 @@ import { AppLayout } from "./components/Layout/AppLayout";
 import "./App.css";
 
 import { Home } from "./pages/Home";
-import { About } from "./pages/About";
 import { Country } from "./pages/Country";
 import { Contact } from "./pages/Contact";
 import { ErrorPage } from "./pages/ErrorPage";
 import { CountryDetails } from "./components/Layout/CountryDetails";
+import {Filters} from "./pages/Filters";
+import AboutPage from "./pages/AboutPage";
 
 const router = createBrowserRouter([
   {
@@ -22,7 +23,11 @@ const router = createBrowserRouter([
       },
       {
         path: "about",
-        element: <About />,
+        element: <AboutPage />,
+      },
+       {
+        path: "filters",
+        element: <Filters />,
       },
       {
         path: "country",

@@ -1,5 +1,6 @@
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+// import PieChart from "./pieChart";
 
 export const HeroSection = () => {
 	return (
@@ -15,7 +16,8 @@ export const HeroSection = () => {
 					</button>
 				</div>
 				<div className="hero-image">
-					<img src="/images/world.png" alt="world is beauty" className="banner-image" />
+					<img src="/images/global.png" alt="world is beauty" className="banner-image" />
+					{/* <PieChart /> */}
 				</div>
 			</div>
 		</main>
