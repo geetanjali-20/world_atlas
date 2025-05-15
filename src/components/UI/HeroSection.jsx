@@ -11,7 +11,7 @@ export const HeroSection = () => {
 					<p className="paragraph">A modern, interactive world atlas designed to help you discover countries, capitals, landmarks, and more. Perfect for students, travelers, and curious minds eager to learn about our planet.</p>
 					<button className="btn btn-darken btn-inline bg-white-box">
 						<NavLink to={`/about`} className="nav-link">
-							Start Exploring <FaLongArrowAltRight />
+							Explore More...<FaLongArrowAltRight />
 						</NavLink>
 					</button>
 				</div>

@@ -10,6 +10,7 @@ import { ErrorPage } from "./pages/ErrorPage";
 import { CountryDetails } from "./components/Layout/CountryDetails";
 import {Filters} from "./pages/Filters";
 import AboutPage from "./pages/AboutPage";
+import ThreeDEarth from "./pages/ThreeDEarth";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "country/:id",
         element: <CountryDetails />,
+      },
+      {
+        path:"threeD",
+        element: <ThreeDEarth/>,
       },
       {
         path: "contact",

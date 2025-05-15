@@ -33,6 +33,10 @@ export const Headers = () => {
                <NavLink to="/filters" className={({ isActive }) => isActive ? "active" : "navItem"}>Insights</NavLink>
 
               </li>
+               <li>
+               <NavLink to="/threeD" className={({ isActive }) => isActive ? "active" : "navItem"}>3D Earth View</NavLink>
+
+              </li>
               <li>
                <NavLink to="/country" className={({ isActive }) => isActive ? "active" : "navItem"}>Countries</NavLink>
 

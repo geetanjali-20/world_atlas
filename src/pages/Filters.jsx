@@ -114,7 +114,7 @@ export const Filters = () => {
 				</div>
 				{/* Chart for top 3 populated countries */}
 
-				<Bar data={topData} options={topOptions} />
+				<Bar data={topData} options={topOptions} className="barChart"/>
 
 				{/* Bottom 3 populated countries */}
 				<div className="insightSection">
@@ -128,7 +128,7 @@ export const Filters = () => {
 					</ul>
 				</div>
 				{/* Chart for bottom 3 populated countries */}
-				<Bar data={bottomData} options={bottomOptions} />
+				<Bar data={bottomData} options={bottomOptions} className="barChart"/>
 			</main>
 		</>
 	);

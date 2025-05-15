@@ -462,7 +462,7 @@ ul {
 }
 
 /* filter section */
-canvas {
+.barChart {
 	width: 75% !important;
 	height: 40% !important;
 	background-color: #fff;
@@ -471,6 +471,46 @@ canvas {
 	padding: 20px;
 	margin: 20px auto;
 }
+
+.canvas-3d{
+
+	width: 95vw !important;
+	height: 100vh !important;
+}
+.infoText{
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+	font-size: 18px;
+	/* color: #fff; */
+	animation: flicker 1.5s infinite alternate;
+  color: #fff;
+}
+
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #0fa,
+      0 0 80px #0fa,
+      0 0 90px #0fa,
+      0 0 100px #0fa,
+      0 0 150px #0fa;
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+.fadeIn{
+	display: none;
+}
+
 .headingWorld {
 	font-family: inherit;
 	font-size: clamp(5.2rem, 6vw, 4.241rem);
@@ -770,6 +810,14 @@ contact us Page ends here
 	.logoName {
 		font-size: 30px;
 	}
+	.canvas-3d{
+
+	width: 100vw !important;
+	height: 100vh !important;
+}
+.navbar-grid {
+	padding: 0 2rem;
+}
 }
 
 /* //Loader  */
